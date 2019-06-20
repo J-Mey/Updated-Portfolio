@@ -3,15 +3,20 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" Href="assets/css/style.css">-->
+    <link rel="stylesheet" Href="assets/css/style.css">
 </head>
 
 <body>
         
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Jeremy Mey</a>
+        <div class="myName">
+            <h4>Jeremy Mey</h4>
+        </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -24,9 +29,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Links/Contact
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/jeremy-mey-34643171/" target="blank"><img src="assets/images/LinkedIn.png"></a>
+                            <a class="dropdown-item" href="https://github.com/J-Mey/" target="blank"><img src="assets/images/GitHub.png"></a>
+                            <a class="dropdown-item" href="mailto:j.mey.r8@gmail.com" target="blank"><img src="assets/images/gmail.png"></a>
+                            <a class="dropdown-item" href="tel:17042936166">Phone: (704) 293-6166</a>
+                            <a class="dropdown-item" href="https://drive.google.com/file/d/0BzzuDfTh5xPRN1lIN0RHUEJzUDN2MUJPNkRMYVpkNVMxWFc0/view?usp=sharing" target="blank">My Resume</a>
+                        </div>
                     </li>
+
                 </ul>
             </div>
     </nav>

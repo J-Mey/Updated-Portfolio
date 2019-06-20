@@ -3,15 +3,21 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" Href="assets/css/style.css">-->
+    <link rel="stylesheet" Href="assets/css/style.css">
 </head>
 
 <body>
     
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Jeremy Mey</a>
+        <!--<a class="navbar-brand" href="#">Jeremy Mey</a>-->
+        <div class="myName">
+            <h4>Jeremy Mey</h4>
+        </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -24,9 +30,18 @@
               <li class="nav-item">
                 <a class="nav-link" href="portfolio.html">Portfolio</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Links/Contact
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="https://www.linkedin.com/in/jeremy-mey-34643171/" target="blank"><img src="assets/images/LinkedIn.png"></a>
+                    <a class="dropdown-item" href="https://github.com/J-Mey/" target="blank"><img src="assets/images/GitHub.png"></a>
+                    <a class="dropdown-item" href="mailto:j.mey.r8@gmail.com" target="blank"><img src="assets/images/gmail.png"></a>
+                    <a class="dropdown-item">Phone: (704) 293-6166</a>
+                    <a class="dropdown-item" href="https://drive.google.com/file/d/0BzzuDfTh5xPRN1lIN0RHUEJzUDN2MUJPNkRMYVpkNVMxWFc0/view?usp=sharing" target="blank">My Resume</a>
+                  </div>
+                </li>
             </ul>
           </div>
     </nav>
@@ -44,42 +59,55 @@
             <h1>Portfolio</h1>
         </div>
       </div>
-          
-        
-        <div class="row">
-          <div class="col-sm-6">
-             <img src="assets/images/bg.jpg" class="img-fluid" alt="Project-1" style="width: 500px">
-              <div class="carousel-caption bg-dark">
-                <h4>Project 1: Liqour Piqour</h4>
-              </div>
-          </div>
 
-          <div class="col-sm-6">
-            <img src="assets/images/200.gif" class="img-fluid" alt="GifTastic" style="width: 500px">
-              <div class="carousel-caption bg-dark">
-                <h4>GifTastic</h4>
+    <div class="row">
+      <div class="col-lg-12">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="10000">
+              <a href="https://blasteriskvon.github.io/Project-1-Beyond-the-Universe/" target="blank">
+              <img src="assets/images/bg.jpg" class="d-block w-100" alt="Project-1"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h4>Project-1: Liquor Piquor</h4>
+                  <a href="https://github.com/BlasteriskVon/Project-1-Beyond-the-Universe" target="blank" style="color:white">
+                    <p>View GitHub Code</p></a>
               </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6">
-            <img src="assets/images/maxresdefault.jpg" class="img-fluid" alt="Crystal Collectors" style="width: 500px">
-              <div class="carousel-caption bg-dark">
+            </div>
+            <div class="carousel-item" data-interval="10000">
+              <a href="https://j-mey.github.io/GifTastic/" target="blank">
+              <img src="assets/images/thor.gif" class="d-block w-100" alt="GifTastic"></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h4>GifTastic!</h4>
+                  <a href="https://github.com/J-Mey/GifTastic" target="blank" style="color:white">
+                    <p>View GitHub Code</p></a>
+              </div>
+            </div>
+            <div class="carousel-item" data-interval="10000">
+              <a href="https://j-mey.github.io/unit-4-game/" target="blank"></a>
+              <img src="assets/images/maxresdefault.jpg" class="d-block w-100" alt="Crystal Collectors"></a>
+              <div class="carousel-caption d-none d-md-block">
                 <h4>Crystal Collectors</h4>
+                  <a href="https://github.com/J-Mey/unit-4-game" target="blank" style="color:white">
+                    <p>View GitHub Code</p></a>
               </div>
+            </div>
           </div>
-
-          
-          
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-
-
-        
-      
       </div>
     </div>
-  
       
     <footer class="footer fixed-bottom footer-expand-lg bg-dark">
         <div class="footer text-center">
